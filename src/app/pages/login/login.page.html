@@ -1,0 +1,37 @@
+
+
+<ion-content>
+  <form [formGroup]="loginForm" (ngSubmit)="continue()">
+  <ion-grid>
+    <ion-row>
+      <ion-col offset="3" size="8">
+        <img class="logo" height="70%" src="assets/images/logo/logo.png" />
+      </ion-col>
+      <ion-col offset="3" size="8">
+        <h1 style="margin-top: -40%;">Connectez-vous</h1>
+      </ion-col>
+
+        <ion-col  size="11">
+          <ion-item>
+            <ion-label position="floating">Addresse mail</ion-label>
+            <ion-input [class.error-border]="loginForm.controls.email.getError('required') && (loginForm.controls.email.touched || loginForm.controls.email.dirty)" [class.error-border]="loginForm.controls.email.getError('email')" formControlName="email"></ion-input>
+            
+          </ion-item>
+          </ion-col>
+          <ion-col  size="11">
+            <ion-item>
+              <ion-label position="floating">Mot de passe</ion-label>
+              <ion-input [class.error-border]="loginForm.controls.password.getError('required') && (loginForm.controls.password.touched || loginForm.controls.password.dirty)" formControlName="password" type="password"></ion-input>
+              
+            </ion-item>
+            </ion-col>
+           
+                <ion-col  size="11">
+                    <ion-button [disabled]="loginForm.invalid" type="submit" class="connection-button" color="tertiary" expand="block" >Continue</ion-button>
+
+                  </ion-col>
+                  
+    </ion-row>
+  </ion-grid>
+  </form>
+</ion-content>

@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Payment du Rendez-vous</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list no-lines>
+
+
+    <ion-item>
+      <h2>Paiement</h2>
+    </ion-item>
+
+      <ion-item>
+      <h3>Montant à payer : 40 DT.</h3>
+    </ion-item>
+      <ion-item>
+      <p>Sélectionner un mode de paiement</p>
+    </ion-item>
+
+  </ion-list>
+
+  <ion-list no-lines>
+    <ion-radio-group value="Paiement">
+  
+      <ion-item>
+        <ion-label>Carte bancaire</ion-label>
+        <ion-radio slot="start" value="Carte bancaire"></ion-radio>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Paypal</ion-label>
+        <ion-radio slot="start" value="Paypal"></ion-radio>
+      </ion-item>
+
+    </ion-radio-group>
+  </ion-list>
+
+
+  <ion-button expand="block" (click)="payer()">Payer</ion-button>
+</ion-content>

@@ -1,0 +1,75 @@
+<menu-example></menu-example>
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Tableau de bord</ion-title>
+    
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  
+  <ion-grid>
+    <ion-col size="12">
+
+      <ion-row>
+        <ion-col>
+          
+        <ion-card (click)="communaute()" >
+          <ion-card-header>
+            <ion-card-subtitle color="dark" style="text-align: center;">Communauté</ion-card-subtitle>
+
+            
+          </ion-card-header>
+        
+          <ion-card-content>
+            <ion-img  style="width:100px;height: 200px;" src="assets/images/app/forum.png"></ion-img>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card (click)="formation()">
+          <ion-card-header>
+            <ion-card-subtitle color="dark" style="text-align: center;">Formation</ion-card-subtitle>
+
+            
+          </ion-card-header>
+        
+          <ion-card-content >
+            <ion-img style="width:100px;height: 200px;" src="assets/images/app/formation.png"></ion-img>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-card (click)="rdvcontact()">
+            <ion-card-header>
+              <ion-card-subtitle color="dark" style="text-align: center;">Rendez-vous & Contact</ion-card-subtitle>
+
+            </ion-card-header>
+          
+            <ion-card-content >
+              <ion-img style="width:100px;height: 200px;" src="assets/images/app/rdv.png"></ion-img>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card (click)="evolutionSuivi()">
+            <ion-card-header>
+              <ion-card-subtitle color="dark" style="text-align: center;">Evolution & suivi</ion-card-subtitle>
+
+            </ion-card-header>
+          
+            <ion-card-content >
+              <ion-img style="width:100px;height: 200px;" src="assets/images/app/evaluation.png"></ion-img>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+  </ion-grid>
+  
+</ion-content>
+

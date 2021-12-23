@@ -1,0 +1,32 @@
+<ion-menu side="start" menuId="first" contentId="main">
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <br>
+      <ion-item (click)="communaute()" ><ion-icon name="people-circle-outline"></ion-icon><ion-text style="padding-left: 5px;">Communauté</ion-text></ion-item>
+      <br>
+      <ion-item (click)="formation()"> <ion-icon name="receipt-outline"></ion-icon><ion-text style="padding-left: 5px;">Formation</ion-text></ion-item>
+      <br>
+      <ion-item (click)="rdvcontact()"><ion-icon name="today-outline"></ion-icon><ion-text style="padding-left: 5px;"> Rendez-vous & Contact</ion-text></ion-item>
+      <br>
+      <ion-item (click)="evolutionSuivi()"><ion-icon name="stats-chart-outline"></ion-icon><ion-text style="padding-left: 5px;">Suivi & évolution</ion-text></ion-item>
+      <br>
+      <ion-item (click)="paymentPage()"><ion-icon name="card-outline"></ion-icon><ion-text style="padding-left: 5px;">S'abonner</ion-text></ion-item>
+    </ion-list>
+    
+  </ion-content>
+  <ion-footer>
+    <ion-item (click)="logout()"><ion-icon name="log-out-outline"></ion-icon><ion-text style="padding-left: 5px;">Se déconnecter</ion-text></ion-item>
+    <br>
+  </ion-footer>
+</ion-menu>
+
+
+
+<ion-router-outlet id="main"></ion-router-outlet>
+
+ 

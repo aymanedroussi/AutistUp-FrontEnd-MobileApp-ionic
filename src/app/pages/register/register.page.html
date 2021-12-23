@@ -1,0 +1,63 @@
+
+
+<ion-content>
+  <form [formGroup]="registerForm" (ngSubmit)="continue()">
+  <ion-grid>
+    <ion-row>
+      <ion-col offset="3" size="8">
+        <img class="logo" height="70%" src="assets/images/logo/logo.png" />
+      </ion-col>
+      <ion-col offset="3" size="8">
+        <h1 style="margin-top: -40%;">Inscrivez-vous</h1>
+      </ion-col>
+      <ion-col  size="11">
+      <ion-item>
+        <ion-label position="floating">Nom d'utilisateur</ion-label>
+        <ion-input [class.error-border]="registerForm.controls.nom.getError('required') && (registerForm.controls.nom.touched || registerForm.controls.nom.dirty)" formControlName="nom"></ion-input>
+      </ion-item>
+     
+      </ion-col>
+      <ion-col  size="11">
+        <ion-item>
+          <ion-label position="floating">Age de l'enfant</ion-label>
+          <ion-input [class.error-border]="registerForm.controls.age.getError('required')  && (registerForm.controls.age.touched || registerForm.controls.age.dirty)" formControlName="age" type="number"></ion-input>
+          
+        </ion-item>
+        </ion-col>
+        <ion-col  size="11">
+          <ion-item>
+            <ion-label position="floating">Addresse mail</ion-label>
+            <ion-input [class.error-border]="registerForm.controls.email.getError('required') && (registerForm.controls.email.touched || registerForm.controls.email.dirty)" [class.error-border]="registerForm.controls.email.getError('email')" formControlName="email"></ion-input>
+            
+          </ion-item>
+          </ion-col>
+          <ion-col  size="11">
+            <ion-item>
+              <ion-label position="floating">Mot de passe</ion-label>
+              <ion-input [class.error-border]="registerForm.controls.password.getError('required') && (registerForm.controls.password.touched || registerForm.controls.password.dirty)" formControlName="password" type="password"></ion-input>
+              
+            </ion-item>
+            </ion-col>
+            <ion-col  size="11">
+              <ion-item>
+                <ion-label position="floating">Confirmez votre mot de passe</ion-label>
+                <ion-input  [class.error-border]="registerForm.controls.confirmPassword.getError('required') && (registerForm.controls.confirmPassword.touched || registerForm.controls.confirmPassword.dirty)" formControlName="confirmPassword" type="password"></ion-input>
+                
+              </ion-item>
+              </ion-col>
+              <ion-col  size="11">
+                <ion-item>
+                  <ion-label position="floating">Numéro de téléphone</ion-label>
+                  <ion-input [class.error-border]="registerForm.controls.mobile.getError('required') && (registerForm.controls.mobile.touched || registerForm.controls.mobile.dirty)" formControlName="mobile" type="number"></ion-input>
+                  
+                </ion-item>
+                </ion-col>
+                <ion-col  size="11">
+                    <ion-button [disabled]="registerForm.invalid" type="submit" class="connection-button" color="tertiary" expand="block" >Continue</ion-button>
+
+                  </ion-col>
+                  
+    </ion-row>
+  </ion-grid>
+  </form>
+</ion-content>

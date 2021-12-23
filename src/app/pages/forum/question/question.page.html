@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Réponses</ion-title>
+  </ion-toolbar>
+  
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-grid>
+      <ion-row *ngFor="let questionVar of question">
+        <ion-card     style="width: 100%;">
+          <ion-card-header>
+            <ion-card-subtitle>{{questionVar.libelle}}</ion-card-subtitle>
+
+          </ion-card-header>
+          <ion-card-content style="font-weight: 1000;">
+            {{questionVar.role}}
+          
+          </ion-card-content>
+        </ion-card>
+      </ion-row>
+    </ion-grid>
+    
+ 
+  </ion-list>
+
+</ion-content>
+<ion-footer>
+  <ion-button (click)="ajouterReponse()" color="tertiary" expand="block">Ajouter une réponse</ion-button> 
+  <ion-button (click)="back()" expand="block">RETOUR</ion-button> 
+</ion-footer>

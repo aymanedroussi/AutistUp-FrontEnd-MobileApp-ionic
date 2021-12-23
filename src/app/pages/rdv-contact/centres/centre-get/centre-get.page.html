@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Centres spécialisés</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding [fullscreen]="true">
+    <ion-searchbar placeholder="Search..." [(ngModel)]="filterTerm" animated="true"></ion-searchbar>
+  
+    <ion-list>
+      <ion-item *ngFor="let centre of centres | filter:filterTerm" >
+      <ion-label>Centre : {{centre.centre}}</ion-label>
+      <ion-label> Address: {{centre.adresse}}</ion-label>
+      <ion-label> Ville: {{centre.villeName}}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
+<ion-footer>
+  
+  <ion-button (click)="back()" expand="block">RETOUR</ion-button> 
+</ion-footer>

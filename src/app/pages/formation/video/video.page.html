@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    
+    
+    <ion-title>Vidéos</ion-title>
+  </ion-toolbar>
+  
+</ion-header>
+
+<ion-content>
+  <ion-searchbar [(ngModel)]="searchLabel" showCancelButton="always" animated></ion-searchbar>
+  <ion-list>
+    <ion-grid>
+      <ion-row *ngFor="let video of videosFormation | filter:searchLabel">
+        <ion-card >
+          <ion-card-header>
+            <ion-card-subtitle>{{video.datePublication}}</ion-card-subtitle>
+            <ion-card-title style="    font-size: large;">{{video.label}}</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            {{video.descripion}}
+          <ion-button expand="block">Regarder</ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-row>
+    </ion-grid>
+    
+ 
+  </ion-list>
+
+</ion-content>
+<ion-footer>
+  
+  <ion-button (click)="back()" expand="block">RETOUR</ion-button> 
+</ion-footer>

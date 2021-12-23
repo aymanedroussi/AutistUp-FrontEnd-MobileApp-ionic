@@ -1,0 +1,213 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-title>M chat Test</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="center">
+  <ion-item>
+      <ion-label>Veuillez répondre à ce formulaire</ion-label>
+    </ion-item>
+  </div>
+
+  <ion-row class="ion-align-items-end">
+    <ion-col size="8"></ion-col>
+    <ion-col size="4">
+      <ion-item color="tertiary">
+        <ion-label ><p>oui<span style="margin-left: 31px;">non</span></p></ion-label>
+      </ion-item>
+    </ion-col>
+    
+  </ion-row>
+   
+  <ion-radio-group  [(ngModel)]="something">
+    <ion-row>
+      <ion-col size="8" >
+      <p> Votre enfant tourne sa tête vers vous si vous l'appelez ?</p>
+      </ion-col>
+      <ion-col size="2">
+           <ion-item>
+              <ion-radio mode="md" item-left value="rep1"></ion-radio>
+         </ion-item>
+       </ion-col>
+  
+       <ion-col size="2">
+          <ion-item>
+              <ion-radio mode="md" item-left value="rep2"></ion-radio>
+         </ion-item>
+      </ion-col>
+  </ion-row>
+ </ion-radio-group>
+
+ <ion-radio-group  [(ngModel)]="something2">
+  <ion-row>
+    <ion-col size="8" >
+    <p> Votre enfant répète un mot/une phrase sans cesse durant la journée</p>
+    </ion-col>
+    <ion-col size="2">
+         <ion-item>
+            <ion-radio mode="md" item-left value="rep3"></ion-radio>
+       </ion-item>
+     </ion-col>
+
+     <ion-col size="2">
+        <ion-item>
+            <ion-radio mode="md" item-left value="rep4"></ion-radio>
+       </ion-item>
+    </ion-col>
+</ion-row>
+</ion-radio-group>
+<ion-radio-group  [(ngModel)]="something3">
+  <ion-row>
+    <ion-col size="8" >
+    <p> Votre enfant s'adresse à vous pour mentionner un besoin (toilettes,soif...)?</p>
+    </ion-col>
+    <ion-col size="2">
+         <ion-item>
+            <ion-radio mode="md" item-left value="rep5"></ion-radio>
+       </ion-item>
+     </ion-col>
+
+     <ion-col size="2">
+        <ion-item>
+            <ion-radio mode="md" item-left value="rep6"></ion-radio>
+       </ion-item>
+    </ion-col>
+</ion-row>
+</ion-radio-group>
+<ion-radio-group  [(ngModel)]="something4">
+  <ion-row>
+    <ion-col size="8" >
+    <p> Votre enfant arrache ses cheveux ?</p>
+    </ion-col>
+    <ion-col size="2">
+         <ion-item>
+            <ion-radio mode="md" item-left value="rep7"></ion-radio>
+       </ion-item>
+     </ion-col>
+
+     <ion-col size="2">
+        <ion-item>
+            <ion-radio mode="md" item-left value="rep8"></ion-radio>
+       </ion-item>
+    </ion-col>
+</ion-row>
+</ion-radio-group>
+
+<ion-radio-group  [(ngModel)]="something5">
+  <ion-row>
+    <ion-col size="8" >
+    <p> Votre enfant remarque des bruits discrets que les autres ne remarquent pas ?</p>
+    </ion-col>
+    <ion-col size="2">
+         <ion-item>
+            <ion-radio mode="md" item-left value="yes"></ion-radio>
+       </ion-item>
+     </ion-col>
+
+     <ion-col size="2">
+        <ion-item>
+            <ion-radio mode="md" item-left value="no"></ion-radio>
+       </ion-item>
+    </ion-col>
+</ion-row>
+</ion-radio-group>
+
+<ion-radio-group  [(ngModel)]="something6">
+  <ion-row>
+    <ion-col size="8" >
+    <p> Votre enfant refuse de sortir de la maison ?</p>
+    </ion-col>
+    <ion-col size="2">
+         <ion-item>
+            <ion-radio mode="md" item-left value="yes"></ion-radio>
+       </ion-item>
+     </ion-col>
+
+     <ion-col size="2">
+        <ion-item>
+            <ion-radio mode="md" item-left value="no"></ion-radio>
+       </ion-item>
+    </ion-col>
+</ion-row>
+</ion-radio-group>
+<ion-radio-group  [(ngModel)]="something7">
+  <ion-row>
+    <ion-col size="8" >
+    <p> Votre enfant est accroché à un jeu particulier/ émission télévisée</p>
+    </ion-col>
+    <ion-col size="2">
+         <ion-item>
+            <ion-radio mode="md" item-left value="yes"></ion-radio>
+       </ion-item>
+     </ion-col>
+
+     <ion-col size="2">
+        <ion-item>
+            <ion-radio mode="md" item-left value="no"></ion-radio>
+       </ion-item>
+    </ion-col>
+</ion-row>
+</ion-radio-group>
+<ion-radio-group  [(ngModel)]="something8">
+  <ion-row>
+    <ion-col size="8" >
+    <p>Votre enfant a fait une crise de stress ou de colère suite à une situation banale ?</p>
+    </ion-col>
+    <ion-col size="2">
+         <ion-item>
+            <ion-radio mode="md" item-left value="yes"></ion-radio>
+       </ion-item>
+     </ion-col>
+
+     <ion-col size="2">
+        <ion-item>
+            <ion-radio mode="md" item-left value="no"></ion-radio>
+       </ion-item>
+    </ion-col>
+</ion-row>
+</ion-radio-group>
+<ion-radio-group  [(ngModel)]="something9">
+  <ion-row>
+    <ion-col size="8" >
+    <p>Votre enfant a marqué une amélioration sur le plan  éducatif (apprendre une nouvelle lettre, écrire...)?</p>
+    </ion-col>
+    <ion-col size="2">
+         <ion-item>
+            <ion-radio mode="md" item-left value="yes"></ion-radio>
+       </ion-item>
+     </ion-col>
+
+     <ion-col size="2">
+        <ion-item>
+            <ion-radio mode="md" item-left value="no"></ion-radio>
+       </ion-item>
+    </ion-col>
+</ion-row>
+</ion-radio-group>
+<ion-radio-group  [(ngModel)]="something10">
+  <ion-row>
+    <ion-col size="8" >
+    <p> Votre enfant est hyper agité ?</p>
+    </ion-col>
+    <ion-col size="2">
+         <ion-item>
+            <ion-radio mode="md" item-left value="yes"></ion-radio>
+       </ion-item>
+     </ion-col>
+
+     <ion-col size="2">
+        <ion-item>
+            <ion-radio mode="md" item-left value="no"></ion-radio>
+       </ion-item>
+    </ion-col>
+</ion-row>
+</ion-radio-group>
+<div class="center">
+  <ion-button color="tertiary" expand="block">Envoyer</ion-button>
+  <ion-button color="primary" expand="block" (click)='back()'>Retour</ion-button>
+</div>
+
+
+</ion-content>

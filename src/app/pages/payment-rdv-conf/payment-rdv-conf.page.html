@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="main"></ion-back-button>
+    </ion-buttons>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list no-lines>
+    <ion-item>
+      <ion-icon name="checkmark-circle"></ion-icon>
+      <h2>Rendez vous envoyé</h2>
+    </ion-item>
+    <ion-item>
+      <p>Vous recervrez le lien de la téléconsultation par mail.</p>
+    </ion-item>
+     
+  </ion-list>
+    <ion-item>
+      <img src="\assets\icon\check.png">
+    </ion-item>
+    <div class='center'>
+    <ion-button expand="block" width="full-width" (click)='redirect()'>Revenir au tableau de bord</ion-button>
+  </div>
+
+</ion-content>
